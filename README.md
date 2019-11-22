@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
@@ -76,3 +77,15 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+=======
+# VitaPet
+ VitaPet is an application for your best friends your pets!
+ This project is make for HCI course!
+ 
+ Developers:
+ Brayan F. Guillen Nakagawa
+ Denis A. Llamoca Cervantes
+ Gelber G. Martinez Pastor
+ Cesar R. Ancco
+ Jhonnatan Poke
+>>>>>>> 93378ad9ac6d53e20536e215b2877c9c75c75b7d
