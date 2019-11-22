@@ -10,10 +10,18 @@
 <body>
     <div class="container">
         <div class="header">
-
+            <img src="{{URL::asset('assets/img/landing-page/logotipo.png')}}" alt="{{__('general.logo-alt')}}" width="200px">
+            <div class="header-buttons"> 
+                <a href="#" class="btn btn-ligth">{{__('landing.header-btnus')}}</a>
+                <a href="#" class="btn btn-ligth">{{__('landing.header-btncontact')}}</a>
+                <a href="#" class="btn btn-green">{{__('landing.header-btnauth')}}</a>
+            </div>
         </div>
         <div class="content-pane">
-
+            <div class="content-message font-lato">
+                <p>{!!__('landing.content-message')!!}</p>
+            </div>
+            <a href="#" class="btn btn-green">{{__('landing.content-btnstart')}}</a>
         </div>
     </div>
 </body>

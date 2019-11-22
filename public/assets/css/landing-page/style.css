@@ -1,6 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Open+Sans:300,400,600,700,800|Roboto:300,400,500,700&display=swap&subset=latin-ext');
+
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+.font-lato{
+    font-family: 'Lato', sans-serif;
+}
+.font-opens{
+    font-family: 'Open Sans', sans-serif;
+}
+.font-roboto{
+    font-family: 'Roboto', sans-serif;
 }
 
 .container{
@@ -8,6 +21,86 @@
     flex-direction: column;
     width: 100%;
     height: 100vh;
-    background-image: url('../../img/landing-page/bg.png');
-    background-size: cover;
+    background: #EEEEEE;
 }
+
+.header{
+    width: 100%;
+    height: 100px;
+    padding: 0.5em 3em;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 6px 6px 10px 10px rgba(0,0,0,.7);
+}
+
+.content-pane{
+    padding: 2em 3em;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../img/landing-page/bgCut.png');
+    background-size: 100% 100%;
+    position: relative;
+    
+}
+.header-buttons{
+    display: flex;
+    align-items: center;
+}
+.header-buttons > a.btn-ligth{
+    margin-right: 15px;
+}
+
+.btn{
+    font-family: 'Lato', sans-serif;
+    display: inline-block;
+    padding: 10px 0;
+    width: 200px;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 30px;
+    
+}
+
+.btn-ligth{
+    border: .5px solid #707070;
+    color: #707070;
+    transition: background-color .5s, color .5s;
+}
+
+.btn-green{
+    color: #fff;
+    background: #126534;
+    position: relative;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.btn-green:hover{
+    transform: scale(1.02);
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.4);
+}
+
+.btn-ligth:hover{
+    background-color: #777777;
+    color: #fff;
+}
+
+.content-message{
+    width: 35%;
+    max-width: 650px;
+}
+
+.content-message p{
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+    font-weight: 100;
+    color: #6A7A37;
+    margin-bottom: .2em;
+    
+}
+
+.content-message p strong{
+    color: #000;
+}
+
