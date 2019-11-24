@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Open+Sans:300,400,600,700,800|Roboto:300,400,500,700&display=swap&subset=latin-ext');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background: #EEEEEE; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-pane{
+    background: #fff;
+    width: 1000px;
+    height: 600px;
+    box-shadow: 6px 6px 10px rgba(0,0,0,0.2);
+    display: flex;
+    transition: box-shadow 1.5s;
+    overflow: hidden;
+}
+
+/*REGISTER*/
+.register-pane{
+    display:inline-block;
+    width: 600px;
+    height: 100%;
+    background: #fff;
+    transition: 1.5s;
+    overflow: hidden;
+}
+/*CHANGE PANEL*/
+.change-pane{
+    padding: 3em 1em;
+    display:inline-block;
+    width: 400px;
+    height: 100%;
+    background: url('../../img/auth-page/changeBackLeft.png');
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: .5s;
+}
+
+.register-pane-social{
+    margin-top: 10px !important;
+}
+
+.change-pane h1{
+    text-align: left;
+    font-size: 50px;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    font-weight: normal;
+    transition: 1.5s;
+    margin-bottom: 2em;
+}
+
+.right-pane{
+    background: url('../../img/auth-page/changeBackRight.png');
+    align-items: flex-end;
+}
+.right-title{
+    text-align: right;
+}
+
+#btnchange{
+    
+    /* margin-top: 100px; */
+    width: 250px;
+    border-radius: 30px;
+    background: #fff;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    height: 50px;
+    transition: transform .5s;
+}
+
+#btnchange:focus{
+    outline: none;
+}
+
+#btnchange:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+/*Log-In*/
+.login-pane{
+    display:inline-block;
+    width: 600px;
+    height: 100%;
+    background: #fff;
+    opacity: 100;
+    transition: 1.5s, opacity .5s ;
+    padding: 40px 20px 10px 20px;
+    overflow: hidden;
+}
+
+.hide{
+    opacity: 0;
+    /* overflow: hidden; */
+    width: 0px !important;
+    padding: 0px !important;
+    
+}
+
+.left-shadow{
+    box-shadow: -6px 6px 10px rgba(0,0,0,0.2) !important;
+}
+
+/*FORMS*/
+
+.form-title{
+    padding: 20px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.form-txt{
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding: 0 45px;
+    margin: 10px auto;
+    font-weight: 400;
+    width: 450px;
+    color: #707070;
+    height: 60px;
+    border-radius: 30px;
+    border: 1px solid #707070;
+}
+
+.submit-container{
+    display: flex;
+    width: 450px;
+    justify-content: flex-end;
+    margin: auto;
+}
+.btn-submit{
+    width: 250px;
+    height: 60px;
+    display: block;
+    /* float: right; */
+
+    border-radius: 30px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    border: none;
+    background: #126534;
+    transition: transform .5s, box-shadow .5s;
+}
+
+.btn-submit:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+    box-shadow: 3px 3px 3px rgba(0,0,0,.5);
+}
+
+.form-social{
+    margin-top: 2em;
+    padding: 0 40px;
+}
+
+.forgot-pass{
+    display: block;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    margin: 5px 0;
+}
+.forgot-pass:hover{
+    text-decoration: underline;
+}
+
+.social-label{
+    text-align: center;
+    margin: 5px 0;
+    color: #6B6B6B;
+    font-family: 'Roboto' ,sans-serif;
+}
+.social-container{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.image-btn{
+    background: transparent;
+    border: none;
+    margin-right: 10px;
+}
