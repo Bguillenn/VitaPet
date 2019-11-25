@@ -19,5 +19,8 @@ Route::get('/auth', function(){
     return view('auth');
 });
 
+Route::get('/prueba', function(){
+    return "hola";
+})
 
 
