@@ -19,3 +19,7 @@ Route::get('/auth', function(){
     return view('auth');
 })->name('general.auth');
 
+Route::get('/dashboard', function(){
+    return view('app');
+})->name('dashboard');
+
