@@ -19,5 +19,3 @@ Route::get('/auth', function(){
     return view('auth');
 })->name('general.auth');
 
-
-
