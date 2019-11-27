@@ -30,8 +30,9 @@ body{
     display:inline-block;
     width: 600px;
     height: 100%;
+    opacity: 100;
     background: #fff;
-    transition: 1.5s;
+    transition: 1.5s, opacity .5s;
     overflow: hidden;
 }
 /*CHANGE PANEL*/
@@ -120,8 +121,10 @@ body{
 
 .form-title{
     padding: 20px 20px;
+    width: 600px;
     font-family: 'Roboto', sans-serif;
     font-size: 50px;
+    color: rgb(61, 61, 61);
     font-weight: bold;
 }
 
@@ -198,4 +201,14 @@ body{
     background: transparent;
     border: none;
     margin-right: 10px;
+    
+}
+
+.image-btn > img{
+    transition: transform .5s;
+}
+
+.image-btn > img:hover{
+    cursor: pointer;
+    transform: scale(1.02);
 }

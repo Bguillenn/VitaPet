@@ -13,11 +13,11 @@
 
 Route::get('/', function () {
     return view('landing');
-});
+})->name('general.land');
 
 Route::get('/auth', function(){
     return view('auth');
-});
+})->name('general.auth');
 
 
 

@@ -28,9 +28,9 @@
                     <hr>
                     <p class="social-label">{{__('auth-page.singin-options')}}</p>
                     <div class="social-container">
-                        <button class="image-btn"><img src="{{ URL::asset('assets/img/auth-page/face-btn.png') }}" alt="{{__('auth-page.face-alt')}}"></button>
-                        <button class="image-btn"><img src="{{ URL::asset('assets/img/auth-page/google-btn.png') }}" alt="{{__('auth-page.google-alt')}}"></button>
-                        <button class="image-btn"><img src="{{ URL::asset('assets/img/auth-page/twitter-btn.png') }}" alt="{{__('auth-page.twitter-alt')}}"></button>
+                        <button class="image-btn"><img src="{{ URL::asset('assets/img/auth-page/face-btn.png') }}" alt="{{__('auth-page.face-alt')}}" width="70px"></button>
+                        <button class="image-btn"><img src="{{ URL::asset('assets/img/auth-page/google-btn.png') }}" alt="{{__('auth-page.google-alt')}}" width="70px"></button>
+                        <button class="image-btn"><img src="{{ URL::asset('assets/img/auth-page/twitter-btn.png') }}" alt="{{__('auth-page.twitter-alt')}}" width="70px"></button>
                     </div>
                 </div>
         </div>
@@ -58,9 +58,9 @@
                 <hr>
                 <p class="social-label">{{__('auth-page.singin-options')}}</p>
                 <div class="social-container">
-                    <button class="image-btn"><img src="{{ URL::asset('assets/img/auth-page/face-btn.png') }}" alt="{{__('auth-page.face-alt')}}"></button>
-                    <button class="image-btn"><img src="{{ URL::asset('assets/img/auth-page/google-btn.png') }}" alt="{{__('auth-page.google-alt')}}"></button>
-                    <button class="image-btn"><img src="{{ URL::asset('assets/img/auth-page/twitter-btn.png') }}" alt="{{__('auth-page.twitter-alt')}}"></button>
+                    <button class="image-btn"><img src="{{ URL::asset('assets/img/auth-page/face-btn.png') }}" alt="{{__('auth-page.face-alt')}}" width="70px"></button>
+                    <button class="image-btn"><img src="{{ URL::asset('assets/img/auth-page/google-btn.png') }}" alt="{{__('auth-page.google-alt')}}" width="70px"></button>
+                    <button class="image-btn"><img src="{{ URL::asset('assets/img/auth-page/twitter-btn.png') }}" alt="{{__('auth-page.twitter-alt')}}" width="70px"></button>
                 </div>
             </div>
         </div>
