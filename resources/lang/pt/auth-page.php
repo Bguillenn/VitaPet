@@ -3,7 +3,7 @@ return [
 
     //CHANGEPANE
     'title-change-register' => 'Você não tem</br>uma conta?',
-    'btnchange-register'    => 'Sing up',
+    'btnchange-register'    => 'Inscreva-se',
     'title-change-login'    => 'Você possui</br>uma conta?',
     'btnchange-login'       => 'Iniciar sessão',
 
@@ -30,6 +30,6 @@ return [
     'register-txt-email'    => 'Correio ou telefone',
     'register-txt-pass'     => 'Senha',
     'register-txt-cpass'    => 'Confirmar senha',
-    'register-btn-submit'   => 'Registre-se',
+    'register-btn-submit'   => 'Inscreva-se',
 
 ];
