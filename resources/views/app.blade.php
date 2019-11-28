@@ -43,8 +43,17 @@
         <div id="top-bar">
             <img src="{{URL::asset('assets/img/landing-page/logotipo.png')}}" alt="{{__('general.logo-alt')}}" width="100px">
             <div id="account-options">
-                <div id="lenguaje-select">
-                    
+                <div id="language-select">
+                    <button id="language-button">
+                        <img src="{{ URL::asset('assets/img/app/es.svg') }}" alt="AÑADIR A TRADUCCIONES" width="20px">
+                        <span>ES</span>
+                        <i class="fas fa-angle-down"></i>
+                    </button>
+                    <div id="language-options">
+                        <a href="#">ES</a>
+                        <a href="#">EN</a>
+                        <a href="#">PT</a>
+                    </div>
                 </div>
                 <div id="profile-select">
                 
