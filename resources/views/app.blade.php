@@ -50,13 +50,60 @@
                         <i class="fas fa-angle-down"></i>
                     </button>
                     <div id="language-options">
-                        <a href="#">ES</a>
-                        <a href="#">EN</a>
-                        <a href="#">PT</a>
+                        <a href="#">
+                            <img src="{{ URL::asset('assets/img/app/en.svg') }}" alt="AÑADIR A TRADUCCIONES" width="20px">
+                            EN
+                        </a>
+                        <a href="#">
+                            <img src="{{ URL::asset('assets/img/app/pt.svg') }}" alt="AÑADIR A TRADUCCIONES" width="20px">
+                            PT
+                        </a>
                     </div>
                 </div>
                 <div id="profile-select">
-                
+                    <button id="profile-button">
+                        <span>Name</span>
+                        <img src="{{ URL::asset('assets/img/app/default-profile.png') }}" alt="AÑADIR A TRADUCCIONES" width="35px">
+                        <i class="fas fa-angle-down"></i>
+                    </button>
+                    <div id="profile-options">
+                        <div id="profile-data">
+                            <img src="{{ URL::asset('assets/img/app/default-profile.png') }}" alt="AÑADIR A TRADUCCIONES" width="100px">
+                            <span> 
+                                <i class="fas fa-circle"></i>
+                                Tu nombre
+                            </span>
+                        </div>
+                        <a href="#">
+                            <span>
+                                <i class="fas fa-user"></i>
+                                Tu perfil
+                            </span>
+                            <i class="fas fa-angle-right"></i>
+                        </a>
+                        <a h-ref="#">
+                            <span>
+                                <i class="fas fa-cog"></i>
+                                Configuracion
+                            </span>
+                            <i class="fas fa-angle-right"></i>
+                        </a>
+                        <a href="#">
+                            <span>
+                                <i class="fas fa-people-carry"></i>
+                                Soporte
+                            </span>
+                            <i class="fas fa-angle-right"></i>
+                        </a>
+                            </hr>
+                        <a href="#">
+                            <span>
+                                <i class="fas fa-door-open"></i>
+                                Salir
+                            </span>
+                            <i class="fas fa-angle-right"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
