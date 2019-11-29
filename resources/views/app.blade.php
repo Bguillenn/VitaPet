@@ -70,10 +70,11 @@
                         <div id="profile-data">
                             <img src="{{ URL::asset('assets/img/app/default-profile.png') }}" alt="AÑADIR A TRADUCCIONES" width="100px">
                             <span> 
-                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle color-green"></i>
                                 Tu nombre
                             </span>
                         </div>
+                        
                         <a href="#">
                             <span>
                                 <i class="fas fa-user"></i>
@@ -96,13 +97,14 @@
                             <i class="fas fa-angle-right"></i>
                         </a>
                             </hr>
-                        <a href="#">
+                        <a href="#" class="color-red">
                             <span>
                                 <i class="fas fa-door-open"></i>
                                 Salir
                             </span>
                             <i class="fas fa-angle-right"></i>
                         </a>
+                        
                     </div>
                 </div>
             </div>
@@ -112,4 +114,7 @@
         </div>
     </div>
 </body>
+
+<script src=" {{URL::asset('assets/js/app.js')}}">
+</script>
 </html>

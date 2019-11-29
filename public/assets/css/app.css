@@ -241,5 +241,12 @@ body{
 }
 /**STYLE TO DISPLAY MENU */
 .show-menu{
-    display: block;
+    display: block !important;
+}
+
+.color-green{
+    color: #126534 !important;
+}
+.color-red{
+    color: #b91414 !important;
 }
