@@ -23,3 +23,9 @@ Route::get('/dashboard', function(){
     return view('app');
 })->name('dashboard');
 
+//Agregue para idioma
+Route::get('locale/{locale}',function($locale){
+    Session::put('locale',$locale);
+    return redirect()->back();
+});
+
