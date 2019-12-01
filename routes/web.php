@@ -29,3 +29,14 @@ Route::get('locale/{locale}',function($locale){
     return redirect()->back();
 });
 
+//Socialite facebook
+Route::get('login/facebook', 'Auth\FacebookController@redirectToProvider');
+Route::get('login/facebook/callback', 'Auth\FacebookController@handleProviderCallback');
+
+Route::get('login/google', 'Auth\GoogleController@redirectToProvider');
+Route::get('login/google/callback', 'Auth\GoogleController@handleProviderCallback');
+
+Route::get('login/twitter', 'Auth\TwitterController@redirectToProvider');
+Route::get('login/twitter/callback', 'Auth\TwitterController@handleProviderCallback');
+
+
