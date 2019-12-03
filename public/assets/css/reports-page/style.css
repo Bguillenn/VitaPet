@@ -1,0 +1,256 @@
+
+section{
+  position:relative;
+  width: 100%;
+  height: 100vh;
+  
+  background:url(fondo.jpg);
+  opacity: 20%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+*{
+  margin:0;
+  padding: 0;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+overflow: hidden;
+background:linear-gradient(to left, #429FA8, #3CBA2F);
+  width:100%;
+  height: 100vh;
+}
+section{
+  position:relative;
+  width: 100%;
+  height: 100vh;
+  
+  background:url(fondo.jpg);
+  opacity: 20%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.animation-area{
+  width: 100%;
+  height: 100vh;
+
+}
+.box-area{
+  position:absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.box-area li{
+  position:absolute;
+  display: block;
+  list-style: none;
+  width: 25px; 
+  height: 25px;
+  background: rgba(255, 255, 255, 0.2);
+  animation:animate 20s linear infinite;
+  bottom: -150px;
+}
+.box-area li:nth-child(1){
+  left:86%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+.box-area li:nth-child(2){
+  left:12%;
+  width: 30px;
+  height: 30px;
+  animation-delay: 1.5s;
+  animation-duration: 10s;
+}
+.box-area li:nth-child(3){
+  left:70%;
+  width: 100px;
+  height: 100px;
+  animation-delay: 5.5s;
+}
+.box-area li:nth-child(4){
+  left:70%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 15s;
+}
+.box-area li:nth-child(5){
+  left:65%;
+  width: 40px;
+  height: 40px;
+  animation-delay: 0s;
+}
+.box-area li:nth-child(6){
+  left:15%;
+  width: 110px;
+  height:110px;
+  animation-delay: 3.5s;
+}
+.VITAPET li{
+  list-style:none;
+  font-family: verdana;
+  font-size: 8em;
+  letter-spacing: 15px;
+  color:#E1CD0D;
+  text-shadow: none;
+  animation-name: animated;
+  animation-duration:  1s;
+  animation-direction: linear;
+  animation-iteration-count: infinite;
+  bottom: -150px;
+
+}
+.VITAPET {
+  position:absolute;
+  top:7%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+}
+@keyframes animate{
+  0%{
+    color: #0021A7;
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(-800px) rotate(360deg);
+    opacity: 0;
+    background-position: 1360;
+  }
+}
+@keyframes animated{
+  0%{
+    color:#a7a300;
+  }
+  18%{
+    color:#a7a300;
+    text-shadow: none;
+  }
+  20%{
+    color:#fff900;
+    text-shadow: 0 0 7px #fff000, 0 0 20px #ff6c00;
+  }
+  30%{
+    color:#a7a300;
+    text-shadow: none;
+  }
+  70%{
+    color:#fff900;
+    text-shadow: 0 0 7px #fff000, 0 0 20px #ff6c00;
+  }
+
+}
+ul li:nth-child(1){
+  animation-delay: .2s;
+}
+ul li:nth-child(2){
+  animation-delay: .4s;
+}
+ul li:nth-child(3){
+  animation-delay: .6s;
+}
+ul li:nth-child(4){
+  animation-delay: .8s;
+}
+ul li:nth-child(5){
+  animation-delay: 1s;
+}
+ul li:nth-child(6){
+  animation-delay: 1.2s;
+}
+ul li:nth-child(7){
+  animation-delay: 1.4s;
+}
+
+
+label {
+    display: inline-block;
+    margin: 10px 0 0 10px;
+}
+@import "compass/css3";
+
+@font-face {
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/Anders.ttf');
+  font-family: test;
+
+
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+
+}
+h1{
+ position: relative;
+  top: 40px; left: 1000px;
+  z-index: 10;
+  font-style: italic;
+  letter-spacing:5px;
+  color:rgba(255,255,255,.1);
+  text-transform: uppercase;
+  font-family: test;
+}
+.magic {
+  z-index: -10;
+  position: absolute;
+  top: calc(50% - 10rem);
+  left: calc(50% - 10rem);
+  width: 20rem;
+  height: 20rem;
+  background: url('FONDOIHC2.jpg') 50% 50% no-repeat fixed;
+  background-size: cover;
+  border-radius: 50%;
+}
+.check-out {
+  z-index: 100;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: #fff;
+  font-family: test;
+
+    background-color: #1d1f20;
+  
+  a {
+
+    color: rgba(255,170,170,1);
+  }
+}
+#container {
+    position: absolute;
+  z-index: 5;
+    width: 100%;
+    top: 35px;
+
+    bottom: 0;
+}
+
+#boton{
+  color: white;
+  width: 60px;
+  height: 40px;
+  background-color:#03800b;
+  border-radius: 84px 84px 84px 84px;
+  -moz-border-radius: 84px 84px 84px 84px;
+  -webkit-border-radius: 84px 84px 84px 84px;
+  border: 0px solid #35f505;
+}
+#cajaBoton{
+  text-align: center;
+  padding-top: 80px;
+}

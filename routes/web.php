@@ -28,6 +28,10 @@ Route::get('locale/{locale}',function($locale){
     Session::put('locale',$locale);
     return redirect()->back();
 });
+//Agregue ruta reports 
+Route::get('/reports', function(){
+    return view('reports.index');
+})->name('reports.index');
 
 //Socialite facebook
 Route::get('login/facebook', 'Auth\FacebookController@redirectToProvider');
