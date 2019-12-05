@@ -7,6 +7,17 @@
     <title>{{__('general.appname')}}</title>
     <link href="{{ URL::asset('assets/css/app.css') }}" rel="stylesheet"></link>
     <script src="https://kit.fontawesome.com/4e69c67bb3.js" crossorigin="anonymous"></script>
+
+<!-- Necesario para reports-->
+ <script src="https://cdn.anychart.com/releases/8.7.0/js/anychart-base.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4">
+</script>
+<script src="https://cdn.anychart.com/releases/8.7.0/js/anychart-sunburst.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4">
+</script>
+<script src="https://cdn.anychart.com/releases/8.7.0/js/anychart-exports.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4"></script>
+<script src="https://cdn.anychart.com/releases/8.7.0/js/anychart-ui.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4">
+</script>
+
+
 </head>
 <body>
     <div id="side-bar">

@@ -1,11 +1,11 @@
 
 //el codigo anychhart.. es para inicializarlo apenas se abre la pagina
 //yo lo desactive para que funcione con un boton ve si quieres cambiarlo
-//anychart.onDocumentReady(function () {
+anychart.onDocumentReady(function () {
     // Creacion de los datos
-function draw(){
+
     var data = [
-      {name: "", children: [
+      {name: "VitaPet", children: [
         {name: "Perros", children: [
           {name: "Cerro Colorado",children: [
               {name:"Desparasitación: 500 perros", children:[
@@ -59,11 +59,10 @@ function draw(){
     // titulo
     chart.title().useHtml(true);
     // Elegimos el id de donde lo pondremos
-    chart.container("container");
-
+    chart.container("dibujo");
     // Lo dibujamos
     chart.draw();
-    var elboton = document.getElementById('boton');
-     elboton.style.visibility = 'hidden';
+    //var elboton = document.getElementById('boton');
+     //elboton.style.visibility = 'hidden';
 
-};
+});
