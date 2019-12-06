@@ -20,14 +20,14 @@ Route::get('/auth', function(){
 })->name('general.auth');
 
 Route::get('/dashboard', function(){
-    return view('app');
+    return view('main');
 })->name('dashboard');
 
 //Agregue para idioma
 Route::get('locale/{locale}',function($locale){
     Session::put('locale',$locale);
     return redirect()->back();
-});
+})->name('locale');
 //Agregue ruta reports 
 Route::get('/reports', function(){
     return view('reports.index');

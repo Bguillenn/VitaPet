@@ -13,7 +13,9 @@ body{
 }
 
 #side-bar{
+    position: fixed;
     width: 50px;
+    z-index: 1;
     height: 100%;
     background: #126534;
     box-shadow: 2px 0px 10px rgba(0,0,0,.3);
@@ -35,10 +37,15 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+
+#top-bar{
+    padding-left: 80px !important;
+    position: fixed;
+}
 #content{
     width: 100%;
     height: 100vh;
-    background: #EEEEEE;
+    
     z-index: -1;
 }
 
@@ -73,13 +80,13 @@ body{
     text-align: center;
 }
 .side-btn-text{
-    
+    display: none;
     position: absolute;
     z-index: -10;
     font-size: 18px;
     color: transparent;
     font-family: 'Lato',sans-serif;
-    transition: .2s ease-out;
+    transition: .5s ease-out;
     margin-left: 5px;
     white-space: nowrap;
     
@@ -91,6 +98,7 @@ body{
 }
 
 .side-btn:hover .side-btn-text{
+    display: initial;
     z-index: unset;
     color:white;
 }
@@ -98,6 +106,7 @@ body{
 /**LANGUAJE DROP DOWN */
 #language-button{
     padding: 0 5px;
+    text-transform: uppercase;
     min-width: 80px;
     max-width: 100px;
     border-radius: 20px;
@@ -117,11 +126,12 @@ body{
     display: inline-block;
 }
 
+
 #language-options{
     display: none;
     position: absolute;
     right: 0;
-    
+    text-transform: uppercase;
     min-width: 100px;
     max-width: 120px;
     border-radius: 10px;

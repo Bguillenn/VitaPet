@@ -108,6 +108,10 @@ return [
 
     'faker_locale' => 'en_US',
 
+    /**locales */
+
+    'locales' => ['en','es','pt'],
+
     /*
     |--------------------------------------------------------------------------
     | Encryption Key
@@ -233,5 +237,4 @@ return [
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
 
     ],
-
 ];

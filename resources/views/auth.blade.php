@@ -13,7 +13,7 @@
         
         <div class="register-pane hide" id="register-pane">
             <h1 class="form-title">{{__('auth-page.register-title')}}</h1>
-                <form action="" method="POST" class="form-container">
+                <form action="{{route('dashboard')}}" method="GET" class="form-container">
                     <input type="text" name="names" class="form-txt" placeholder="{{__('auth-page.register-txt-name')}}" required>
                     <input type="text" name="phone" class="form-txt" placeholder="{{__('auth-page.register-txt-email')}}" required>
                     <input type="password" name="password" class="form-txt" placeholder="{{__('auth-page.register-txt-pass')}}" required>
@@ -28,17 +28,10 @@
                     <hr>
                     <p class="social-label">{{__('auth-page.singin-options')}}</p>
                     
-                    <!--Estos son los botones que puse para que se pueda registrar con redes sociales -->
-                    
-                    <a class="image-btn" href="{{url('/login/facebook')}}"> <img src="{{ URL::asset('assets/img/auth-page/face-btn.png') }}" alt="{{__('auth-page.face-alt')}}" width="70px"></a>
-                    <a class="image-btn" href="{{url('/login/google')}}"><img src="{{ URL::asset('assets/img/auth-page/google-btn.png') }}" alt="{{__('auth-page.google-alt')}}" width="70px"></a>
-                    <a class="image-btn" href="{{url('/login/twitter')}}"><img src="{{ URL::asset('assets/img/auth-page/twitter-btn.png') }}" alt="{{__('auth-page.twitter-alt')}}" width="70px"></a>
-                    
-                    <!-- ------------------------------------------------------------------------------ -->
                     <div class="social-container">
-                        <button class="image-btn"><img src="{{ URL::asset('assets/img/auth-page/face-btn.png') }}" alt="{{__('auth-page.face-alt')}}" width="70px"></button>
-                        <button class="image-btn"><img src="{{ URL::asset('assets/img/auth-page/google-btn.png') }}" alt="{{__('auth-page.google-alt')}}" width="70px"></button>
-                        <button class="image-btn"><img src="{{ URL::asset('assets/img/auth-page/twitter-btn.png') }}" alt="{{__('auth-page.twitter-alt')}}" width="70px"></button>
+                        <a class="image-btn" href="{{url('/login/facebook')}}"> <img src="{{ URL::asset('assets/img/auth-page/face-btn.png') }}" alt="{{__('auth-page.face-alt')}}" width="70px"></a>
+                        <a class="image-btn" href="{{url('/login/google')}}"><img src="{{ URL::asset('assets/img/auth-page/google-btn.png') }}" alt="{{__('auth-page.google-alt')}}" width="70px"></a>
+                        <a class="image-btn" href="{{url('/login/twitter')}}"><img src="{{ URL::asset('assets/img/auth-page/twitter-btn.png') }}" alt="{{__('auth-page.twitter-alt')}}" width="70px"></a>
                     </div>
                 </div>
         </div>
@@ -52,7 +45,7 @@
         
         <div class="login-pane" id="login-pane">
             <h1 class="form-title">{{__('auth-page.login-title')}}</h1>
-            <form action="" method="POST" class="form-container">
+            <form action="{{route('dashboard')}}" method="GET" class="form-container">
                 <input type="text" name="email" class="form-txt" placeholder="{{__('auth-page.login-txt-email')}}" required>
                 <input type="password" name="password" class="form-txt" placeholder="{{__('auth-page.login-txt-pass')}}" required>
 
@@ -66,18 +59,10 @@
                 <hr>
                 <p class="social-label">{{__('auth-page.singin-options')}}</p>
                 
-                <!--Estos son los botones que puse para que se pueda loguear con redes sociales -->
-                    
+                <div class="social-container">
                     <a class="image-btn" href="{{url('/login/facebook')}}"> <img src="{{ URL::asset('assets/img/auth-page/face-btn.png') }}" alt="{{__('auth-page.face-alt')}}" width="70px"></a>
                     <a class="image-btn" href="{{url('/login/google')}}"><img src="{{ URL::asset('assets/img/auth-page/google-btn.png') }}" alt="{{__('auth-page.google-alt')}}" width="70px"></a>
                     <a class="image-btn" href="{{url('/login/twitter')}}"><img src="{{ URL::asset('assets/img/auth-page/twitter-btn.png') }}" alt="{{__('auth-page.twitter-alt')}}" width="70px"></a>
-                    
-                    <!-- ------------------------------------------------------------------------------ -->
-                
-                <div class="social-container">
-                    <button class="image-btn"><img src="{{ URL::asset('assets/img/auth-page/face-btn.png') }}" alt="{{__('auth-page.face-alt')}}" width="70px"></button>
-                    <button class="image-btn"><img src="{{ URL::asset('assets/img/auth-page/google-btn.png') }}" alt="{{__('auth-page.google-alt')}}" width="70px"></button>
-                    <button class="image-btn"><img src="{{ URL::asset('assets/img/auth-page/twitter-btn.png') }}" alt="{{__('auth-page.twitter-alt')}}" width="70px"></button>
                 </div>
             </div>
         </div>

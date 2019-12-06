@@ -30,6 +30,7 @@ anychart.onDocumentReady(function () {
 
     // set container id for the chart and initiate chart drawing
     chart.container('dibujo').draw();
+    chart.container('dibujo2').draw();
 });
 
 function drawer() {

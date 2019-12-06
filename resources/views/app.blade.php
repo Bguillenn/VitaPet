@@ -22,31 +22,31 @@
 <body>
     <div id="side-bar">
         <div id="top-elements">
-            <a href="#" class="side-btn">
+            <a href="{{route('dashboard')}}" class="side-btn">
                 <i class="fas fa-home side-btn-icon"></i>
-                <span class="side-btn-text">Principal</span>
+                <span class="side-btn-text">{{__('general.side-main')}}</span>
             </a>
             <a href="#" class="side-btn">
                 <i class="fas fa-paw side-btn-icon"></i>
-                <span class="side-btn-text">Tus mascotas</span>
+                <span class="side-btn-text">{{__('general.side-pets')}}</span>
             </a>
             <a href="#" class="side-btn">
                 <i class="fas fa-clinic-medical side-btn-icon"></i>
-                <side class="side-btn-text">Veterinarias</side>
+                <side class="side-btn-text">{{__('general.side-vets')}}</side>
             </a>
-            <a href="#" class="side-btn">
+            <a href="{{route('reports.index')}}" class="side-btn">
                 <i class="fas fa-newspaper side-btn-icon"></i>
-                <span class="side-btn-text">Novedades</span>
+                <span class="side-btn-text">{{__('general.side-news')}}</span>
             </a>
             <a href="#" class="side-btn">
                 <i class="fas fa-cut side-btn-icon"></i>
-                <span class="side-btn-text">Moda animal</span>
+                <span class="side-btn-text">{{__('general.side-mode')}}</span>
             </a>
         </div>
         <div id="bottom-element">
             <a href="#" class="side-btn">
                 <i class="fas fa-info-circle side-btn-icon"></i>
-                    <span class="side-btn-text">Info</span>
+                    <span class="side-btn-text">{{__('general.side-info')}}</span>
                 </a>
         </div>
     </div>
@@ -56,19 +56,19 @@
             <div id="account-options">
                 <div id="language-select">
                     <button id="language-button">
-                        <img src="{{ URL::asset('assets/img/app/es.svg') }}" alt="AÑADIR A TRADUCCIONES" width="20px">
-                        <span>ES</span>
+                        <img src="{{ URL::asset('assets/img/app/'.App::getLocale().'.svg') }}" alt="AÑADIR A TRADUCCIONES" width="20px">
+                        <span>{{App::getLocale()}}</span>
                         <i class="fas fa-angle-down"></i>
                     </button>
                     <div id="language-options">
-                        <a href="#">
-                            <img src="{{ URL::asset('assets/img/app/en.svg') }}" alt="AÑADIR A TRADUCCIONES" width="20px">
-                            EN
-                        </a>
-                        <a href="#">
-                            <img src="{{ URL::asset('assets/img/app/pt.svg') }}" alt="AÑADIR A TRADUCCIONES" width="20px">
-                            PT
-                        </a>
+                        @foreach(Config::get('app.locales') as $language)
+                            @if($language != App::getLocale())
+                                <a href="{{route('locale',['locale' => $language])}}">
+                                    <img src="{{ URL::asset('assets/img/app/'.$language.'.svg') }}" alt="AÑADIR A TRADUCCIONES" width="20px">
+                                    {{$language}}
+                                </a>
+                            @endif
+                        @endforeach 
                     </div>
                 </div>
                 <div id="profile-select">
@@ -82,36 +82,36 @@
                             <img src="{{ URL::asset('assets/img/app/default-profile.png') }}" alt="AÑADIR A TRADUCCIONES" width="100px">
                             <span> 
                                 <i class="fas fa-circle color-green"></i>
-                                Tu nombre
+                                User name
                             </span>
                         </div>
                         
                         <a href="#">
                             <span>
                                 <i class="fas fa-user"></i>
-                                Tu perfil
+                                {{__('general.optionsP-profile')}}
                             </span>
                             <i class="fas fa-angle-right"></i>
                         </a>
                         <a h-ref="#">
                             <span>
                                 <i class="fas fa-cog"></i>
-                                Configuracion
+                                {{__('general.optionsP-config')}}
                             </span>
                             <i class="fas fa-angle-right"></i>
                         </a>
                         <a href="#">
                             <span>
                                 <i class="fas fa-people-carry"></i>
-                                Soporte
+                                {{__('general.optionsP-supp')}}
                             </span>
                             <i class="fas fa-angle-right"></i>
                         </a>
                             </hr>
-                        <a href="#" class="color-red">
+                        <a href="{{route('general.auth')}}" class="color-red">
                             <span>
                                 <i class="fas fa-door-open"></i>
-                                Salir
+                                {{__('general.optionsP-exit')}}
                             </span>
                             <i class="fas fa-angle-right"></i>
                         </a>

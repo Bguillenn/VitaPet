@@ -1,163 +1,22 @@
-
-.fondo{
-  position:relative;
-  width: 100%;
-  height: 100%;
-  background:url(fondo.jpg);
-  opacity: 60%;
-  background-size: cover;
-  
-}
-body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-   background:linear-gradient(to left, #429FA8, #3CBA2F);
-    width:100%;
-    height: 100vh;
+.content-pane{
+  margin-top: 50px;
+  margin-left: 50px;
+  font-family: 'Lato', sans-serif;
+  padding: 20px;
 }
 
-.VITAPET li{
-  list-style:none;
-  font-family: verdana;
-  font-size: 8em;
-  letter-spacing: 15px;
-  color:#E1CD0D;
-  text-shadow: none;
-  animation-name: animated;
-  animation-duration:  1s;
-  animation-direction: linear;
-  animation-iteration-count: infinite;
-  bottom: -150px;
-
+.content-pane h3{
+  font-size: 35px;
 }
-.VITAPET {
-  position:absolute;
-  top:20%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  margin: 0;
-  padding: 0;
-  display: flex;
-
-}
-@keyframes animate{
-  0%{
-    color: #0021A7;
-    opacity: 1;
-  }
-  100%{
-    transform: translateY(-700px) rotate(360deg);
-    opacity: 0;
-    background-position: 1360;
-  }
-}
-@keyframes animated{
-  0%{
-    color:#a7a300;
-  }
-  18%{
-    color:#a7a300;
-    text-shadow: none;
-  }
-  20%{
-    color:#fff900;
-    text-shadow: 0 0 7px #fff000, 0 0 20px #ff6c00;
-  }
-  30%{
-    color:#a7a300;
-    text-shadow: none;
-  }
-  70%{
-    color:#fff900;
-    text-shadow: 0 0 7px #fff000, 0 0 20px #ff6c00;
-  }
-
-}
-ul li:nth-child(1){
-  animation-delay: .2s;
-}
-ul li:nth-child(2){
-  animation-delay: .4s;
-}
-ul li:nth-child(3){
-  animation-delay: .6s;
-}
-ul li:nth-child(4){
-  animation-delay: .8s;
-}
-ul li:nth-child(5){
-  animation-delay: 1s;
-}
-ul li:nth-child(6){
-  animation-delay: 1.2s;
-}
-ul li:nth-child(7){
-  animation-delay: 1.4s;
+.content-pane hr{
+  margin: 10px 0;
 }
 
-
-label {
-    display: inline-block;
-    margin: 10px 0 0 10px;
-}
-@import "compass/css3";
-
-@font-face {
-  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/Anders.ttf');
-  font-family: test;
-
-
-}
-*, *:before, *:after {
-  box-sizing: border-box;
-  margin: 0;
-
-}
-h1{
- position: relative;
-  top: 40px; left: 100px;
-  z-index: 10;
-  font-style: italic;
-  letter-spacing:5px;
-  color:rgba(255,255,255,.1);
-  text-transform: uppercase;
-  font-family: test;
-}
-#container {
-
-    position: absolute;
-    z-index: 5;
-    width: 100%;
-    top: 35px;
-
-    bottom: 0;
-}
-#boton{
-  color: white;
-  width: 60px;
-  position:relative;
-  height: 40px;
-  background-color:#03800b;
-  border-radius: 84px 84px 84px 84px;
-  -moz-border-radius: 84px 84px 84px 84px;
-  -webkit-border-radius: 84px 84px 84px 84px;
-  border: 0px solid #35f505;
-}
-#cajaBoton{
-  position:relative;
-  text-align: center;
-  padding-top: 300px;
-}
 #dibujo{
-  position: relative;
-  top: 35%;
-  left: 10%;
-    width: 80%;
-    height: 60%;
-    margin: 0;
-    padding: 0;
-
+  margin: 10px;
+  width: 100%;
+  padding: 10px;
+  height: 350px;
+  border: 2px solid rgba(0,0,0,0.1);
+  border-radius: 10px;
 }
